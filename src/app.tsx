@@ -57,8 +57,16 @@ export function App() {
     : notes
 
   return (
-    <div className='mx-auto max-w-6xl my-12 space-y-6 px-5'>
-      <img src={logo} alt="Logo - NLW Expert" />
+    <div className='mx-auto max-w-6xl mt-12 mb-8 space-y-6 px-5'>
+      <header className='flex items-center justify-between'>
+        <img src={logo} alt="Logo - NLW Expert" />
+        <div className='pr-2'>
+          <p className='text-slate-300 text-lg'>
+            By <a className='hover:underline' href='https://github.com/ishugodev'>ishugo</a>
+          </p>
+        </div>
+
+      </header>
 
       <form className='w-full'>
         <input
